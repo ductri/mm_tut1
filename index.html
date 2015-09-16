@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Tut1 - Mat ma an ninh mang</title>
+	<style type="text/css">
+	input[type="submit"] {
+		-moz-box-shadow: 0px 0px 11px 0px #1b45c2;
+		-webkit-box-shadow: 0px 0px 11px 0px #1b45c2;
+		box-shadow: 0px 0px 11px 0px #1b45c2;
+		background-color:#8666f2;
+		-moz-border-radius:11px;
+		-webkit-border-radius:11px;
+		border-radius:11px;
+		border:1px solid #1e19ab;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:17px;
+		padding:3px 12px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #2f6627;
+	}
+	input[type="submit"]:hover {
+		background-color:#4333b8;
+	}
+	input[type="submit"]:active	{
+		position:relative;
+		top:1px;
+	}
+
+	input[type="file"] {
+		-moz-box-shadow: 0px 0px 11px 0px #c21b1b;
+		-webkit-box-shadow: 0px 0px 11px 0px #c21b1b;
+		box-shadow: 0px 0px 11px 0px #c21b1b;
+		background-color:#f06868;
+		-moz-border-radius:11px;
+		-webkit-border-radius:11px;
+		border-radius:11px;
+		border:1px solid #ab1919;
+		display:inline-block;
+		cursor:pointer;
+		color:#ffffff;
+		font-family:Arial;
+		font-size:15px;
+		padding:3px 12px;
+		text-decoration:none;
+		text-shadow:0px 1px 0px #662828;
+
+	}
+	input[type="file"]:hover {
+		background-color:#b83333;
+	}
+	input[type="file"]:active {
+		position:relative;
+		top:1px;
+	}
+	</style>
+</head>
+<body>
+<h1>
+	Hien thuc ma hoa S-DES su dung Electronic Codebook (ECB)
+</h1>
+
+<form method="post" action="http://localhost/mm/upload_encrypt.php"  enctype="multipart/form-data">
+	<h2 style="font-family:Consolas">Select file to encryte:</h2>
+	<input type="file" name="file2upload"><br><br>
+	<input type="submit" name="submit">
+</form>
+<br><br>
+----------------------------------------------------------------
+<br><br>
+<form method="post" action="http://localhost/mm/upload_decrypt.php"  enctype="multipart/form-data">
+	<h2 style="font-family:Consolas">Select file to decryte:</h2>
+	<input type="file" name="file2upload"><br><br>
+	<input type="submit" name="submit">
+</form>
+</body>
+</html>
